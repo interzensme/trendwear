@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FashionHub - Modern Clothing Brand</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    /* Navbar */
+    .navbar {
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .navbar-nav .nav-link {
+      font-weight: 500;
+      margin-right: 15px;
+      color: #333 !important;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #ff6b6b !important;
+    }
+    /* Hero */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1521335629791-ce4aec67ddc9?auto=format&fit=crop&w=1950&q=80') no-repeat center center;
+      background-size: cover;
+      height: 90vh;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    }
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      text-shadow: 0 1px 8px rgba(0,0,0,0.4);
+    }
+    .hero .btn {
+      padding: 12px 30px;
+      font-size: 1.1rem;
+      border-radius: 50px;
+    }
+    /* Sections */
+    section {
+      padding: 80px 0;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .section-title h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      position: relative;
+      display: inline-block;
+    }
+    .section-title h2::after {
+      content: '';
+      width: 50px;
+      height: 3px;
+      background-color: #ff6b6b;
+      display: block;
+      margin: 10px auto 0;
+    }
+    /* Collections */
+    .card img {
+      height: 250px;
+      object-fit: cover;
+    }
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 40px 0;
+    }
+    footer a {
+      color: #ff6b6b;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">FashionHub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#collections">Collections</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Style Your Life</h1>
+      <p>Modern Clothing for Men, Women & Kids</p>
+      <a href="#collections" class="btn btn-danger">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>About Us</h2>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-6 mx-auto">
+          <p>FashionHub is your ultimate destination for trendy and high-quality clothing for men, women, and kids. Our mission is to bring style, comfort, and confidence to every wardrobe.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collections Section -->
+  <section id="collections">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Collections</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1593032457868-9fa9cf5a23c1?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Men">
+            <div class="card-body text-center">
+              <h5 class="card-title">Men</h5>
+              <p class="card-text">Trendy & Comfortable Outfits for Every Occasion.</p>
+              <a href="#" class="btn btn-outline-danger">Shop Men</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d4a0?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Women">
+            <div class="card-body text-center">
+              <h5 class="card-title">Women</h5>
+              <p class="card-text">Elegant & Stylish Fashion for Every Woman.</p>
+              <a href="#" class="btn btn-outline-danger">Shop Women</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1600185363967-9b09a4466b2f?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Kids">
+            <div class="card-body text-center">
+              <h5 class="card-title">Kids</h5>
+              <p class="card-text">Fun & Comfortable Clothing for Kids of All Ages.</p>
+              <a href="#" class="btn btn-outline-danger">Shop Kids</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog">
+    <div class="container">
+      <div class="section-title">
+        <h2>Latest Blog Posts</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Blog 1">
+            <div class="card-body">
+              <h5 class="card-title">Summer Fashion Tips</h5>
+              <p class="card-text">Discover how to stay stylish and cool this summer season.</p>
+              <a href="#" class="btn btn-danger btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1520974735194-d934d2a30850?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Blog 2">
+            <div class="card-body">
+              <h5 class="card-title">Wardrobe Essentials</h5>
+              <p class="card-text">The must-have items for a versatile and chic wardrobe.</p>
+              <a href="#" class="btn btn-danger btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1533055640609-24b498cdfa20?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Blog 3">
+            <div class="card-body">
+              <h5 class="card-title">Kids Style Guide</h5>
+              <p class="card-text">How to dress your kids fashionably and comfortably.</p>
+              <a href="#" class="btn btn-danger btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact Us</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p>&copy; 2025 FashionHub. All rights reserved.</p>
+      <p>
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
